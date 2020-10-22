@@ -4,114 +4,78 @@
 	box-sizing: border-box;
 }
 
-header {
+body {
+	min-height: 100%;
 	display: flex;
-	width: 92%;
-	margin: auto;
-	padding-top: 40px;
+	justify-content: center;
+	padding: 20px 44px 42px 24px;
 }
 
-.main-container {
-	width: 1440px;
-	height: 100%;
-	margin: auto;
+.container {
+	display: flex;
+	flex-direction: column;
+	max-width: 1440px;
+	width: 100%;
 }
 
-.text-top {
+header h2 {
 	font-family: "Inconsolata";
 	font-weight: 700;
 	font-size: 24px;
-}
-
-.content {
+	line-height: 25px;
+	margin-top: 40px;
 	display: flex;
-	width: 92%;
-	margin: auto;
-	min-height: 80vh;
-	align-items: center;
+	flex-direction: row;
+	text-transform: uppercase;
 }
 
-.text-content {
-	flex: 1;
-}
-
-.text-content h1,
-p,
-button {
-	font-family: "Space Mono";
-}
-
-.text-content h1 {
-	font-size: 64px;
-	width: 62vh;
-}
-
-.text-content p {
-	font-size: 24px;
-	width: 20vw;
-	height: 11vh;
-	margin-top: 36px;
-}
-
-.text-content button {
-	font-size: 14px;
-	background-color: #333333;
-	color: white;
-	border: none;
-	width: 11vw;
-	height: 7vh;
-	margin-top: 64px;
+main {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 7.5em;
+	margin-top: 200px;
 }
 
 .main-img {
-	flex: 1;
+	width: 100%;
 }
 
 .main-img img {
-	height: 47vh;
+	width: 540px;
+	height: 447px;
+}
+
+.text-content h1 {
+	font-family: "Space Mono";
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 94.78px;
+}
+
+.text-content p {
+	font-family: "Space Mono";
+	font-size: 24px;
+	line-height: 35.54px;
+	margin-top: 36px;
+	width: 381px;
+}
+
+.text-content button {
+	width: 216px;
+	height: 68px;
+	background-color: #333333;
+	color: white;
+	font-family: "Inconsolata";
+	font-size: 14px;
+	font-weight: 700;
+	border: none;
+	margin-top: 88px;
 }
 
 footer {
-	display: flex;
-	width: 100%;
-	justify-content: space-around;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	margin-top: 86px;
+	font-size: 14px;
 }
 
-.footer p {
-	margin-bottom: 39px;
-	align-items: center;
-	position: relative;
-	top: 100%;
-}
-
-@media screen and (max-width: 1690px) {
-	.content {
-		flex-direction: column;
-	}
-
-	.main-img img {
-		height: 30vh;
-		margin-top: 64px;
-	}
-
-	.text-content h1 {
-		font-size: 48px;
-		width: auto;
-		margin-top: 60px;
-	}
-
-	.text-content p {
-		font-size: 18px;
-		width: auto;
-		margin-top: 29px;
-	}
-
-	.text-content button {
-		width: 216px;
-		height: 68px;
-	}
-
-	.footer {
-		margin-bottom: 42px;
-	}
-}
