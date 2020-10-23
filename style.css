@@ -8,7 +8,7 @@ body {
 	min-height: 100%;
 	display: flex;
 	justify-content: center;
-	padding: 20px 44px 44px 20px;
+	padding: 20px 44px 42px 24px;
 }
 
 .container {
@@ -81,3 +81,56 @@ footer {
 	margin-top: 86px;
 	font-size: 14px;
 }
+
+
+@media screen and (max-width: 1070px) {
+	.main-img img {
+		width: 90%;
+		height: 90%;
+	}
+
+	.text-content h1 {
+		font-size: 58px;
+	}
+
+	main {
+		margin-top: 60px;
+		gap: 1rem;
+	}
+
+}
+
+@media screen and (max-width: 968px) {
+	.main-img img {
+		width: 80%;
+		height: 80%;
+	}
+
+	.text-content h1 {
+		font-size: 48px;
+	}
+
+	.text-content p {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.main-img img {
+		width: 70%;
+		height: 70%;
+	}
+
+	.text-content h1 {
+		font-size: 48px;
+	}
+
+	.text-content p {
+		font-size: 18px;
+	}
+
+		main {
+		margin-top: 60px;
+	}
+}
+
