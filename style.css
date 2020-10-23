@@ -15,8 +15,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	max-width: 1440px;
-	min-width: 375px;
-	width: 100%;
+	height: 100%;
 }
 
 header h2 {
@@ -37,11 +36,7 @@ main {
 	margin-top: 200px;
 }
 
-.main-img {
-	width: 100%;
-}
-
-.main-img img {
+img {
 	width: 540px;
 	height: 447px;
 }
@@ -58,7 +53,6 @@ main {
 	font-size: 24px;
 	line-height: 35.54px;
 	margin-top: 36px;
-	width: 381px;
 }
 
 .text-content button {
@@ -76,7 +70,26 @@ main {
 footer {
 	text-align: center;
 	font-family: "Montserrat", sans-serif;
-	margin-top: 86px;
+	margin-top: 135px;
 	font-size: 14px;
 }
 
+@media screen and (max-width: 376px) {
+	main {
+		margin-top: 64px;
+		gap: 3em;
+	}
+
+	img {
+		width: 287px;
+		height: 238px;
+	}
+
+	.text-content h1 {
+		font-size: 48px;
+	}
+
+	.text-content p {
+		font-size: 18px;
+	}
+}
